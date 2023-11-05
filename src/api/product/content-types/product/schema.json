@@ -1,0 +1,162 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Product_id": {
+      "type": "biginteger"
+    },
+    "Product_text": {
+      "type": "string"
+    },
+    "Entry_date": {
+      "type": "date"
+    },
+    "Product_catagories": {
+      "type": "string",
+      "required": true
+    },
+    "Color": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "Material_type": {
+      "type": "string"
+    },
+    "Partner_ID": {
+      "type": "string"
+    },
+    "Partner_text": {
+      "type": "string"
+    },
+    "catagories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::catagory.catagory",
+      "inversedBy": "products"
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "SKU": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "S_Description": {
+      "type": "string"
+    },
+    "L_Description": {
+      "type": "text"
+    },
+    "HSN_IN": {
+      "type": "biginteger"
+    },
+    "HSN_EU": {
+      "type": "biginteger"
+    },
+    "Key_word": {
+      "type": "text"
+    },
+    "Sale_Price_SDate": {
+      "type": "date"
+    },
+    "Sale_Price_EDate": {
+      "type": "date"
+    },
+    "Tax_Class": {
+      "type": "string"
+    },
+    "In_stock": {
+      "type": "string"
+    },
+    "Low_Stock": {
+      "type": "string"
+    },
+    "Weight": {
+      "type": "decimal"
+    },
+    "Weight_Unit": {
+      "type": "string"
+    },
+    "Length_CM": {
+      "type": "decimal"
+    },
+    "Width_CM": {
+      "type": "decimal"
+    },
+    "Height_CM": {
+      "type": "decimal"
+    },
+    "Customer_review": {
+      "type": "boolean"
+    },
+    "Purchaser": {
+      "type": "string"
+    },
+    "Sales_Price": {
+      "type": "decimal"
+    },
+    "Regular_Price": {
+      "type": "decimal"
+    },
+    "Shipping_Class": {
+      "type": "string"
+    },
+    "Product_form": {
+      "type": "string"
+    },
+    "User_Manual": {
+      "type": "boolean"
+    },
+    "Certificates": {
+      "type": "text"
+    },
+    "MOQ": {
+      "type": "integer"
+    },
+    "PQ_Box": {
+      "type": "integer"
+    },
+    "PQ_Carton": {
+      "type": "integer"
+    },
+    "Box_Size_CM": {
+      "type": "string"
+    },
+    "Box_weight_GM": {
+      "type": "decimal"
+    },
+    "Carton_Size": {
+      "type": "string"
+    },
+    "Carton_Weight_GM": {
+      "type": "decimal"
+    },
+    "ProdImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Categorized": {
+      "type": "boolean"
+    },
+    "CategoryId": {
+      "type": "integer"
+    }
+  }
+}

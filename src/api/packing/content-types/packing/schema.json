@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packings",
+  "info": {
+    "singularName": "packing",
+    "pluralName": "packings",
+    "displayName": "Packing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Product_ID": {
+      "type": "biginteger"
+    },
+    "Product_text": {
+      "type": "string"
+    },
+    "S_Description": {
+      "type": "string"
+    },
+    "L_Description": {
+      "type": "text"
+    },
+    "Product_Catagory": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "Weight": {
+      "type": "decimal"
+    },
+    "Weight_Unit": {
+      "type": "string"
+    },
+    "Length_CM": {
+      "type": "decimal"
+    },
+    "Width_CM": {
+      "type": "decimal"
+    },
+    "Height_CM": {
+      "type": "decimal"
+    },
+    "Purchaser": {
+      "type": "string"
+    },
+    "Shipping_Class": {
+      "type": "string"
+    },
+    "User_Manual": {
+      "type": "string"
+    },
+    "Certificates": {
+      "type": "text"
+    },
+    "MOQ": {
+      "type": "integer"
+    },
+    "PQ_Box": {
+      "type": "integer"
+    },
+    "PQ_Carton": {
+      "type": "integer"
+    },
+    "Box_Size_CM": {
+      "type": "string"
+    },
+    "Box_weight_GM": {
+      "type": "decimal"
+    },
+    "Carton_Size_CM": {
+      "type": "string"
+    },
+    "Carton_Weight_GM": {
+      "type": "decimal"
+    },
+    "Active": {
+      "type": "string"
+    },
+    "Box_Qubic": {
+      "type": "integer"
+    },
+    "Carton_Qubic": {
+      "type": "integer"
+    },
+    "Labling": {
+      "type": "text"
+    }
+  }
+}

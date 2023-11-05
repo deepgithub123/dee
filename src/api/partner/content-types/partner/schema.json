@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Partner_ID": {
+      "type": "biginteger"
+    },
+    "P_First_Name": {
+      "type": "string",
+      "required": true
+    },
+    "P_Last_Name": {
+      "type": "string",
+      "required": true
+    },
+    "Create_Date": {
+      "type": "date",
+      "required": true
+    },
+    "Password": {
+      "type": "password"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "Mobile": {
+      "type": "biginteger",
+      "required": true
+    },
+    "City": {
+      "type": "string",
+      "required": true
+    },
+    "Address1": {
+      "type": "text",
+      "required": true
+    },
+    "Address2": {
+      "type": "text"
+    },
+    "State": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "Gendar": {
+      "type": "string"
+    },
+    "GST_No": {
+      "type": "string",
+      "required": true
+    },
+    "Reference": {
+      "type": "biginteger"
+    },
+    "Partner_Type": {
+      "type": "string"
+    },
+    "Product_Catagory": {
+      "type": "string"
+    }
+  }
+}
